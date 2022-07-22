@@ -9,13 +9,13 @@ package p3;
  *
  * @author reroes
  */
-public class DominioGmail implements DominioCorreo{
+public class DominioYahoo implements DominioCorreo{
     
     private String dominio;
     
     @Override
     public void establecerDominio(){
-        dominio = "Gmail.com";
+        dominio = "Yahoo.com";
     }
     
     @Override
@@ -26,12 +26,8 @@ public class DominioGmail implements DominioCorreo{
     @Override
     public String toString() {
         
-        String cadena = "Dominio Gmail\n";
-        
-        
-        
-        
-        
+        String cadena = "Dominio Yahoo\n";
+
         return cadena;
         
         

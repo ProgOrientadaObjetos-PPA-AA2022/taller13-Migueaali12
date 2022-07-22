@@ -10,12 +10,12 @@ package p3;
  * @author reroes
  */
 public class Correo {
-    private DominioGmail dominioGmail;
+    private DominioCorreo dominioMail;
     private String correo;
     private String username;
     
-    public void establecerDominio(DominioGmail g){
-        dominioGmail = g;
+    public void establecerDominio(DominioCorreo g){
+        dominioMail = g;
     }
     
     public void establecerUserName(String u){
@@ -27,8 +27,8 @@ public class Correo {
                 obtenerDominio().obtenerDominio());
     }
     
-    public DominioGmail obtenerDominio(){
-        return dominioGmail;
+    public DominioCorreo obtenerDominio(){
+        return dominioMail;
     }
     
     public String obtenerUserName(){
@@ -37,6 +37,16 @@ public class Correo {
     
     public String obtenerCorreo(){
         return correo;
+    }
+    
+    @Override
+    public String toString() {
+        String cadena = String.format("uername: %s\n"
+                + "correo: %s\n"
+                + "Dominio: %s\n",username,
+                correo,
+                dominioMail.toString());
+        return cadena;
     }
     
 }
