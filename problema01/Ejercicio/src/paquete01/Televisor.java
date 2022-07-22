@@ -32,7 +32,7 @@ public class Televisor {
         return precio;
     }
     
-    public double totalPrecioTvs(ArrayList<Televisor> t){
+    /*public double totalPrecioTvs(ArrayList<Televisor> t){
         double s = 0;
         for (int i = 0; i < t.size(); i++) {
             s = s + t.get(i).obtenerPrecio();
@@ -53,7 +53,7 @@ public class Televisor {
             s = String.format("%s%s\n", s, t.get(i).obtenerMarca());
         }
         return s;
-    }
+    }*/
     
     @Override
     public String toString(){
